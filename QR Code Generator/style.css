@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind', sans-serif;
+}
+
+body {
+    background: lavender;
+}
+
+.container {
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container p {
+    margin-bottom: 20px;
+    color: blue;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.container input {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+
+.container button {
+    width: 100%;
+    outline: 0;
+    border: 0;
+    background: blue;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.container button:hover {
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+#img-box {
+    width: 100%;
+    text-align: center;
+}
+
+#img {
+    margin: 30px auto 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    display: none;
+}
+
+.error {
+    animation: shake 0.2s linear 5;  
+    /* (for 0.1s type is liner repeat for 10 times) */
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-2px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(2px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#warning {
+    color: red;
+    margin-top: 0;
+    display: none;
+}
