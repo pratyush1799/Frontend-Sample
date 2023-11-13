@@ -1,0 +1,6 @@
+Step 1: create the HTML & CSS of the music player
+Step 2: Using the JS select the 3 main HTML elements audio#songs range-input#progesss & playIcon#ctrlIcon
+Step 3: Make a function and load the meta data of the song. What is the maximum value of progess bar & the current time of song is  the current value of progress bar
+Step 4: Customize the play button onclick the icon should change & the song should play/pause
+Step 5: using if statement & setTimeInterval function which updates every 500ms sync the value of Progress bar & the audio current time
+Step 6: using JS function '.onchange' the progess bar update the song currentTime and the play/pause icon accordingly
