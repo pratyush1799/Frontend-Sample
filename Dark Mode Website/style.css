@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --primary-color: lavender;
+    --secondary-color: orangered;
+    --link-color: #1A1A1A;
+}
+
+.dark-theme {
+    --primary-color: #222;
+    --secondary-color: orangered;
+    --link-color: lavender;
+}
+
+.dark-theme button {
+    background: orangered;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: var(--primary-color)
+}
+
+nav {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+#icon {
+    cursor: pointer;
+    width: 30px;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+nav img {
+    cursor: pointer;
+}
+
+.info {
+    margin-top: 12%;
+    margin-left: 8%;
+}
+
+.info h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: var(--link-color);
+}
+
+.info h1 span {
+    color: var(--secondary-color);
+}
+
+.info p {
+    color: var(--link-color);
+    margin-bottom: 30px;
+}
+
+.info button {
+    background: var(--secondary-color);
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    border: none;
+    outline: 0;
+    font-weight: bold;
+    transition: transform 0.5s;
+}
+
+.info button:hover {
+    background: var(--secondary-color);
+    transition: transform scale(2);
+    box-shadow: 0 8px 8px 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+}
+
+.img-box {
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 150px;
+}
+
+.img-box img {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    height: 100%;
+    transition: bottom 1s, right 1s;
+}
+
+.img-box:hover .back-img {
+    bottom: 30px;
+}
+
+.img-box:hover .main-img {
+    right: 15%;
+}
+
+.social-link {
+    margin-top: 100px;
+    margin-left: 8%;
+}
+
+.social-link a {
+    font-size: 30px;
+    margin: 0 20px;
+    color: var(--link-color);
+}
+
+.social-link a:hover {
+    color: var(--secondary-color);
+}
