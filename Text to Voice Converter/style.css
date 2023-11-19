@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(10deg, purple, navy);
+}
+
+.container h1 {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.container h1 span {
+    color: pink;
+    border-bottom: 1px solid pink;
+}
+
+textarea {
+    width: 600px;
+    height: 250px;
+    border-radius: 10px;
+    background: transparent;
+    padding: 30px 40px;
+    filter: blur(20%);
+    outline: none;
+    border: 2px solid #ddd;
+    font-size: 16px;
+    color: #fff;
+}
+
+::placeholder {
+    color: #ddd;
+}
+
+.row {
+    margin-top: 20px;
+    width: 600px;
+    display: flex;
+    gap: 10px
+}
+
+.row button {
+    color: #fff;
+    padding: 10px 30px;
+    background: linear-gradient(45deg, purple, rgb(229, 43, 74));
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+}
+
+.row button img {
+    width: 12px;
+    margin-right: 5px;
+}
+
+.row select {
+    width: 480px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    outline: none;
+    padding: 0 20px;
+    background: transparent;
+    color: #ddd;
+    appearance: none;
+    cursor: pointer;
+    background-image: url('/Text to Voice Converter/images/dropdown.png');
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 20px);
+    background-position-y: 8px;
+    resize: none;
+}
