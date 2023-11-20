@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100dvh;
+    background-image: url('/Coming soon page/images/background.png');
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+}
+
+.logo {
+    width: 120px;
+    margin-top: 15px;
+}
+
+.content {
+    color: #fff;
+    margin-top: 12%;
+}
+
+.content p {
+    font-size: 24px;
+}
+
+.content h1 {
+    font-size: 64px;
+}
+
+.content h1 span {
+    color: rgb(199, 51, 76);
+}
+
+.launch-time {
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.launch-time div p {
+    font-size: 50px;
+}
+
+.content button {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.content button img {
+    width: 16px;
+}
+
+.rocket {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    width: 250px;
+    animation: rocket 4s linear infinite;
+}
+
+@keyframes rocket {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+    100% {
+        bottom: 100%;
+        opacity: 1;
+    }
+}
