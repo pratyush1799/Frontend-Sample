@@ -9,12 +9,10 @@ selectBox.onclick = function() {
     arrowIcon.classList.toggle('rotate');
 }
 
-
-let option = Array.from(button);
-for(opt of option)
+for(option of button)
 {
-    opt.onclick = function() {
-        selectText.innerHTML = opt.innerText;
+    option.onclick = function(e) {
+        selectText.innerHTML = e.target.innerText;
         selectOptions.classList.toggle('hide');
         arrowIcon.classList.toggle('rotate');
     }
