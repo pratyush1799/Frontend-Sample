@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100dvh;
+    background: #f2fbff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-page {
+    width: 90%;
+    max-width: 750px;
+    display: flex;
+}
+
+.product-image {
+    flex-basis: 53%;
+    background: #1A1A1A;
+    padding: 0;
+    padding-top: 50px;
+    transform: scale(1.08);
+    box-shadow: 3px 7px 7px 3px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.details {
+    flex-basis: 47%;
+    padding: 50px 45px;
+    background: #fff;
+    box-shadow: 3px 7px 7px 3px rgba(0, 0, 0, 0.2);
+}
+
+.details h1 {
+    font-size: 35px;
+    color: #1A1A1A;
+    margin-bottom: 10px;
+}
+
+.details h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.details h3 {
+    color: #4ac74a;
+    margin-bottom: 10px;
+}
+
+.details p {
+    color: #000;
+}
+
+.size-select, .select-color, .select-quantity {
+    display: flex;
+    margin: 20px 0;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: rgb(157, 155, 155);
+}
+
+.size-select p, .select-color p, .select-quantity p {
+    width: 40%;
+    color: rgb(124, 120, 120);
+}
+
+.size-select input {
+    display: none;
+}
+
+.size-select span, .select-color span {
+    margin: 0 5px;
+    cursor: pointer;
+    font-weight: 200;
+}
+
+.size-select input:checked + span {
+    color: blue;
+    font-weight: bold;
+}
+
+.select-color input {
+    display: none;
+}
+
+.select-color span {
+    display: inline-block;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.color-1 {
+    background: red;
+}
+
+.color-2 {
+    background: green;
+}
+
+.color-3 {
+    background: pink;
+}
+
+.color-4 {
+    background: blue;
+}
+
+.select-color input:checked + span {
+    padding: 3px;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #000;
+    transform: scale(1.15)
+}
+
+.select-quantity input {
+    background: rgb(240, 235, 235);
+    border: 0;
+    outline: 0;
+    width: 20%;
+    border-radius: 50px;
+    padding: 2px 4px 2px 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px 15px;
+    margin-top: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    background: rgb(66, 66, 249);
+    color: #fff;
+    font-weight: 500;
+    transition: transform .5s;
+}
+
+button:hover {
+    box-shadow: 4px 6px 6px 4px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+.controls {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.controls span {
+    width: 10px;
+    height: 10px;
+    display: block;
+    background: rgb(157, 155, 155);
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btn.active {
+    background: #fff;
+}
